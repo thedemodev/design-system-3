@@ -5,6 +5,7 @@ import '../src/nds-dev.css';
 function loadStories() {
   require('../src/scss/components/_type.story.js');
   require('../src/scss/utilities/_type.story.js');
+  require('../src/scss/components/_table.story.js');
 }
 
 configure(loadStories, module);

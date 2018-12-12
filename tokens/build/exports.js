@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 06 Dec 2018 14:48:11 GMT
+ * Generated on Tue, 11 Dec 2018 20:34:13 GMT
  */
 
 export const color_base_black = "#011e38";
@@ -13,11 +13,11 @@ export const color_base_grey = "#c0c8d1";
 export const color_base_light_grey = "#e4e7eb";
 export const color_base_white_grey = "#f0f2f5";
 export const color_base_white = "#ffffff";
-export const color_base_yellow = "#ffbb00";
 export const color_base_green = "#008059";
 export const color_base_light_green = "#e6faf0";
 export const color_base_red = "#cc1439";
 export const color_base_light_red = "#faebec";
+export const color_base_yellow = "#ffbb00";
 export const font_family_base = "'IBM Plex Sans', sans";
 export const font_family_mono = "'IBM Plex Mono', monospace";
 export const radius_background_small = "2px";

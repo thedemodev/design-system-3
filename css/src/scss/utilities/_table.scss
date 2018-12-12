@@ -1,0 +1,30 @@
+.table{
+  border-collapse: collapse;
+  .table__cell{
+    font-size: $size-font-medium;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+    color: $color-base-black;
+    padding: $size-padding-x-2 $size-padding-x-1;
+    &--header{
+      color: $color-base-dark-grey;
+      border-bottom: solid 1px $color-base-light-grey;
+      padding: $size-padding-x-2 $size-padding-x-1 $size-padding-x-3;
+    }
+    &--identifier{
+
+    }
+    &--numerical{
+      text-align: right;
+    }
+    &--disabled{
+      color: $color-base-grey;
+    }
+  }
+  .table__body-row{
+    &:first-child .table__cell{
+      padding-top: $size-padding-x-3;
+    }
+  }
+}
