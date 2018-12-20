@@ -1,20 +1,33 @@
+// Reset
+
 .table{
   border-collapse: collapse;
 }
 
-.table__body-row{
-  &:first-child .table__cell{
-    padding-top: $size-padding-x-3;
-  }
+
+
+// Basic styles
+
+.SectionTitle{
+  padding-bottom: $size-padding-x-3;
 }
 
-.table__cell{
+%table__cell{
   font-size: $size-font-medium;
   line-height: 1.5;
   font-weight: 400;
   text-align: left;
   color: $color-base-black;
   padding: $size-padding-x-2;
+  vertical-align: top;
+}
+
+
+
+// Modifiers / Variations
+
+.table__cell{
+  @extend %table__cell;
   &--header{
     color: $color-base-dark-grey;
     border-bottom: solid 1px $color-base-light-grey;
@@ -33,8 +46,10 @@
   &:last-child{
     padding-right: 0;
   }
-}
-
-.SectionTitle{
-  padding-bottom: $size-padding-x-3;
+  .table__body-row:first-child &{
+    padding-top: $size-padding-x-3;
+  }
+  .table__body-row:last-child &{
+    padding-bottom: $size-padding-x-3;
+  }
 }
