@@ -1,16 +1,28 @@
-// Reset
+// Reset, normalize, utils
 
 .table{
   border-collapse: collapse;
 }
 
+button{
+  border: none;
+  font-size: 1em;
+  text-align: center;
+}
 
+%flex{
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex($spacing){
+    @extend %flex;
+    justify-content: $spacing;
+}
+
+// Table
 
 // Basic styles
-
-.SectionTitle{
-  padding-bottom: $size-padding-x-3;
-}
 
 %table__cell{
   font-size: $size-font-medium;
@@ -22,8 +34,6 @@
   vertical-align: top;
 }
 
-
-
 // Modifiers / Variations
 
 .table__cell{
@@ -33,7 +43,12 @@
     border-bottom: solid 1px $color-base-light-grey;
     padding: $size-padding-x-2 $size-padding-x-2 $size-padding-x-3;
   }
-  &--identifier{}
+  &--dnd-trigger, &--select{
+    padding: $size-padding-x-2 $size-padding-half;
+  }
+  &--identifier{
+    padding: $size-padding-x-2 $size-padding-x-2 $size-padding-x-2 $size-padding-x-1;
+  }
   &--numerical{
     text-align: right;
   }
@@ -51,5 +66,74 @@
   }
   .table__body-row:last-child &{
     padding-bottom: $size-padding-x-3;
+  }
+}
+
+// Header
+
+.SectionTitle{
+  padding-bottom: $size-padding-x-3;
+  .header-wrapper &{
+    padding-bottom: 0;
+  }
+}
+
+.header-wrapper{
+  @include flex(
+      $spacing: space-between
+  )
+  padding-bottom: $size-padding-x-3;
+}
+
+// Custom bar
+
+.custom-bar__trigger{
+  padding: $size-padding-x-1;
+  margin: 0 $size-padding-half;
+  width: 40px;
+  border: solid 1px lime;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+// Applied filters summary
+
+.applied-filters-summary{
+  @include flex(
+      $spacing: flex-start
+  )
+  &__item{
+    border: solid 1px $color-base-light-grey;
+    border-radius: 8px;
+    margin-right: $size-padding-x-1;
+  }
+  &__trigger{
+    font-size: 14px;
+  }
+  &__remove{
+    font-size: 10px!important;
+    border:solid 1px lime;
+  }
+}
+
+// Actions
+
+.action-wrapper{
+  @include flex(
+      $spacing: space-between
+  )
+}
+
+.table-action-set{
+  &__item{
+    border:solid 1px blue;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    border-radius: 3px;
   }
 }
