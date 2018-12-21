@@ -5,6 +5,7 @@
 %button {
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
+    line-height: 1.5;
     border: 0;
     text-decoration: none;
     font-size: $size-font-base;
@@ -19,14 +20,14 @@
     @extend %button;
     color: $font;
     background: $background;
-    border: 1px solid $background; 
+    border: 1px solid $background;
 
     &:hover {
         background: darken($background, 5%);
     }
-    
+
     &:active {
-        background: darken($background, 15%); 
+        background: darken($background, 15%);
         transform: scale(0.98); transition: .2s ease-in;
     }
 
@@ -37,7 +38,7 @@
             color: $font;
         }
     }
-}  
+}
 
 /* -----------------------------------------
     ## Variations
@@ -77,17 +78,17 @@
 /* -----------------------------------------
     ## Sizes
 ----------------------------------------- */
-.Button.small, 
-.PrimaryButton.small, 
-.DangerButton.small, 
+.Button.small,
+.PrimaryButton.small,
+.DangerButton.small,
 .QuietButton.small {
-    font-size: $size-font-small !important;     
+    font-size: $size-font-small !important;
     padding: $size-padding-half $size-padding-x-1 !important;
 }
 
-.Button.large, 
-.PrimaryButton.large, 
-.DangerButton.large, 
+.Button.large,
+.PrimaryButton.large,
+.DangerButton.large,
 .QuietButton.large {
     padding: $size-padding-x-2 $size-padding-x-3 !important;
 }

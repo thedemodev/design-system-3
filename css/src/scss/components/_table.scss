@@ -52,6 +52,9 @@ button{
   &--numerical{
     text-align: right;
   }
+  &--actions{
+    text-align: right;
+  }
   &--disabled{
     color: $color-base-grey;
   }
@@ -88,16 +91,6 @@ button{
 // Custom bar
 
 .custom-bar__trigger{
-  padding: $size-padding-x-1;
-  margin: 0 $size-padding-half;
-  width: 40px;
-  border: solid 1px lime;
-  &:first-child{
-    margin-left: 0;
-  }
-  &:last-child{
-    margin-right: 0;
-  }
 }
 
 // Applied filters summary
@@ -107,16 +100,26 @@ button{
       $spacing: flex-start
   )
   &__item{
+    @include flex(
+      $spacing: space-between
+    )
     border: solid 1px $color-base-light-grey;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-right: $size-padding-x-1;
+    font-size: $size-font-small;
+    line-height: 16px;
+    padding: $size-padding-half;
   }
   &__trigger{
-    font-size: 14px;
+    color: $color-base-dark-blue;
+    padding: 0 $size-padding-x-1 0 $size-padding-half;
   }
   &__remove{
-    font-size: 10px!important;
-    border:solid 1px lime;
+    width: 1em;
+    height: 1em;
+    margin-: 0 $size-padding-half;
+    background:transparent url("icons/close-mini.svg") no-repeat center center;
+    background-size: 100%;
   }
 }
 
@@ -126,14 +129,50 @@ button{
   @include flex(
       $spacing: space-between
   )
+  &--is-dnd{
+    padding-left: $size-padding-x-2;
+  }
+}
+
+.multiselect-trigger{
+  .multiselect-trigger__checkbox{
+    margin-right: $size-padding-x-1;
+  }
+  .multiselect-trigger__label{
+    color: $color-base-dark-grey;
+    font-size: $size-font-small;
+  }
 }
 
 .table-action-set{
-  &__item{
-    border:solid 1px blue;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 8px 16px;
-    border-radius: 3px;
+  @include flex(
+      $spacing: space-between
+  )
+}
+
+
+// Iconic button
+.IconicButton{
+  background: none;
+// Temp - until we build icon component
+  height: 24px;
+  padding:4px;
+  width: 18px;
+  margin: 4px 8px;
+  &--more{
+    background:transparent url("icons/more.svg") no-repeat center center;
+    background-size: 100%;
+  }
+  &--search{
+    background:transparent url("icons/search.svg") no-repeat center center;
+    background-size: 100%;
+  }
+  &--custom-view{
+    background:transparent url("icons/custom-view.svg") no-repeat center center;
+    background-size: 100%;
+  }
+  &--filter{
+    background:transparent url("icons/filter.svg") no-repeat center center;
+    background-size: 100%;
   }
 }

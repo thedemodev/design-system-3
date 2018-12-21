@@ -486,6 +486,7 @@ img {
 .Button, .PrimaryButton, .DangerButton, .QuietButton {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
+  line-height: 1.5;
   border: 0;
   text-decoration: none;
   font-size: 16px;
@@ -587,8 +588,14 @@ img {
 .table {
   border-collapse: collapse; }
 
-.SectionTitle {
-  padding-bottom: 24px; }
+button {
+  border: none;
+  font-size: 1em;
+  text-align: center; }
+
+.header-wrapper, .applied-filters-summary, .applied-filters-summary__item, .action-wrapper, .table-action-set {
+  display: flex;
+  align-items: center; }
 
 .table__cell {
   font-size: 16px;
@@ -604,7 +611,16 @@ img {
   border-bottom: solid 1px #e4e7eb;
   padding: 16px 16px 24px; }
 
+.table__cell--dnd-trigger, .table__cell--select {
+  padding: 16px 4px; }
+
+.table__cell--identifier {
+  padding: 16px 16px 16px 8px; }
+
 .table__cell--numerical {
+  text-align: right; }
+
+.table__cell--actions {
   text-align: right; }
 
 .table__cell--disabled {
@@ -621,3 +637,66 @@ img {
 
 .table__body-row:last-child .table__cell {
   padding-bottom: 24px; }
+
+.SectionTitle {
+  padding-bottom: 24px; }
+  .header-wrapper .SectionTitle {
+    padding-bottom: 0; }
+
+.header-wrapper {
+  justify-content: space-between;
+  padding-bottom: 24px; }
+
+.applied-filters-summary {
+  justify-content: flex-start; }
+  .applied-filters-summary__item {
+    justify-content: space-between;
+    border: solid 1px #e4e7eb;
+    border-radius: 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px; }
+  .applied-filters-summary__trigger {
+    color: #00438f;
+    padding: 0 8px 0 4px; }
+  .applied-filters-summary__remove {
+    width: 1em;
+    height: 1em;
+    margin-: 0 4px;
+    background: transparent url("icons/close-mini.svg") no-repeat center center;
+    background-size: 100%; }
+
+.action-wrapper {
+  justify-content: space-between; }
+  .action-wrapper--is-dnd {
+    padding-left: 16px; }
+
+.multiselect-trigger .multiselect-trigger__checkbox {
+  margin-right: 8px; }
+
+.multiselect-trigger .multiselect-trigger__label {
+  color: #434d59;
+  font-size: 14px; }
+
+.table-action-set {
+  justify-content: space-between; }
+
+.IconicButton {
+  background: none;
+  height: 24px;
+  padding: 4px;
+  width: 18px;
+  margin: 4px 8px; }
+  .IconicButton--more {
+    background: transparent url("icons/more.svg") no-repeat center center;
+    background-size: 100%; }
+  .IconicButton--search {
+    background: transparent url("icons/search.svg") no-repeat center center;
+    background-size: 100%; }
+  .IconicButton--custom-view {
+    background: transparent url("icons/custom-view.svg") no-repeat center center;
+    background-size: 100%; }
+  .IconicButton--filter {
+    background: transparent url("icons/filter.svg") no-repeat center center;
+    background-size: 100%; }

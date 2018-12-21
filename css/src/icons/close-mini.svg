@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Close/Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M18,7.21649485 L16.7835052,6 L12,10.7835052 L7.21649485,6 L6,7.21649485 L10.7835052,12 L6,16.7835052 L7.21649485,18 L12,13.2164948 L16.7835052,18 L18,16.7835052 L13.2164948,12 L18,7.21649485 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon/Close/Circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#D8D8D8" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <rect id="Colour" fill="#00438F" mask="url(#mask-2)" x="0" y="0" width="24" height="24"></rect>
+    </g>
+</svg>

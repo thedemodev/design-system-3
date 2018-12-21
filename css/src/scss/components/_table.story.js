@@ -118,29 +118,30 @@ storiesOf('Components/Table', module)
   <div class="header-wrapper">
     <h2 class="SectionTitle">Table Title</h2>
     <section class="custom-bar">
-      <button class="custom-bar__trigger">i</button>
-      <button class="custom-bar__trigger">i</button>
-      <button class="custom-bar__trigger">i</button>
+      <button class="IconicButton IconicButton--search"></button>
+      <button class="IconicButton IconicButton--filter"></button>
+      <button class="IconicButton IconicButton--custom-view"></button>
     </section>
   </div>
   <section class="applied-filters-summary">
     <div class="applied-filters-summary__item">
       <button class="applied-filters-summary__trigger">Filter 1</button>
-      <button class="applied-filters-summary__remove">X</button>
+      <button class="applied-filters-summary__remove"></button>
     </div>
     <div class="applied-filters-summary__item">
       <button class="applied-filters-summary__trigger">Filter 1</button>
-      <button class="applied-filters-summary__remove">X</button>
+      <button class="applied-filters-summary__remove"></button>
     </div>
+    <button class="QuietButton small">Clear all</button>
   </section>
-  <div class="action-wrapper">
+  <div class="action-wrapper action-wrapper--is-dnd">
     <span class="multiselect-trigger">
       <input class="multiselect-trigger__checkbox" id="select" type="checkbox" />
       <label class="multiselect-trigger__label" for="select">Select / deselect all</label>
     </span>
     <section class="table-action-set">
-      <button class="table-action-set__item table-action-set__item--primary-action">Add new</button>
-      <button class="table-action-set__item table-action-set__item--secondary-action-trigger">More actions</button>
+      <button class="Button">Add new</button>
+      <button class="IconicButton IconicButton--more"></button>
     </section>
   </div>
   <table class="table">
@@ -168,7 +169,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Anh Berg</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -180,7 +181,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Giovanna Mouser</td>
         <td class="table__cell">Late</td>
         <td class="table__cell">Wrong quantity has been entered by supplier.</td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -192,7 +193,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Wayne Hightower</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -204,7 +205,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Ozie Stimac</td>
         <td class="table__cell">Late</td>
         <td class="table__cell">The item has been held at customs.</td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -216,7 +217,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Anh Berg</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -228,7 +229,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Giovanna Mouser</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -240,7 +241,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Wayne Hightower</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -252,7 +253,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Ozie Stimac</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -264,7 +265,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Wayne Hightower</td>
         <td class="table__cell">Closed</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
       <tr class="table__body-row">
         <td class="table__cell table__cell--dnd-trigger">a</td>
@@ -276,7 +277,7 @@ storiesOf('Components/Table', module)
         <td class="table__cell">Ozie Stimac</td>
         <td class="table__cell">On track</td>
         <td class="table__cell"></td>
-        <td class="table__cell table__cell--actions">a</td>
+        <td class="table__cell table__cell--actions"><button class="IconicButton IconicButton--more"></button></td>
       </tr>
     </tbody>
     <tfoot></tfoot>
