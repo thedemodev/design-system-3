@@ -22,7 +22,7 @@
     "design system"
   ],
   "engines": {
-    "node": "^8.11.3",
+    "node": "^10.15.0",
     "yarn": "^1.13.0"
   },
   "devDependencies": {
