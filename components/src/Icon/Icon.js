@@ -43,9 +43,20 @@ Svg.defaultProps = {
 };
 
 const Icon = styled(Svg)`
+  min-width: ${props => `${props.size}px`};
   ${space}
   ${color}  
 `;
+
+Icon.propTypes = {
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  ...space.propTypes,
+  ...color.propTypes,
+};
+
+Icon.defaultProps = {
+  size: 24,
+};
 
 const iconSizeRatio = 1.25;
 
