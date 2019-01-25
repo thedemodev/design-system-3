@@ -3,7 +3,7 @@ import { space } from "styled-system";
 import React from "react";
 import PropTypes from "prop-types";
 import theme from "../theme";
-import Icon, { iconNames } from "../Icon/Icon";
+import Icon from "../Icon/Icon";
 import { subPx } from "../utils";
 
 const size = props => {
@@ -36,26 +36,31 @@ const size = props => {
 
 
 const BaseButton = ({
-  children, iconSide, iconName, ...props
+  children,
+  icon,
+  iconSide,
+  ...props
 }) => {
   const { theme: { lineHeights: { smallTextCompressed } } } = props;
 
   return (
     <button { ...props }>
-      {(iconName && iconSide === "left")
+      {(icon.name && iconSide === "left")
           && (
           <Icon
-            style={ { minWidth: `${smallTextCompressed}em` } } size={ `${smallTextCompressed}em` } mr={ 1 }
-            name={ iconName }
+            size={ `${smallTextCompressed}em` }
+            mr={ 1 }
+            { ...icon }
           />
           )
         }
       {children}
-      {(iconName && iconSide === "right")
+      {(icon.name && iconSide === "right")
           && (
           <Icon
-            style={ { minWidth: `${smallTextCompressed}em` } } size={ `${smallTextCompressed}em` } ml={ 1 }
-            name={ iconName }
+            size={ `${smallTextCompressed}em` }
+            ml={ 1 }
+            { ...icon }
           />
           )
         }
@@ -66,10 +71,14 @@ const BaseButton = ({
 BaseButton.propTypes = {
   theme: PropTypes.shape({}).isRequired,
   children: PropTypes.node.isRequired,
-  iconSide: PropTypes.string.isRequired,
-  iconName: PropTypes.string.isRequired,
+  icon: PropTypes.shape({}),
+  iconSide: PropTypes.oneOf(["left", "right"]),
 };
 
+BaseButton.defaultProps = {
+  icon: { name: null },
+  iconSide: "right",
+};
 
 const Button = styled(BaseButton)`
     display: inline-flex;
@@ -102,14 +111,11 @@ Button.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
   disabled: PropTypes.bool,
   fullWidth: PropTypes.bool,
-  iconName: PropTypes.oneOf(iconNames),
-  iconSide: PropTypes.oneOf(["left", "right"]),
   ...space.propTypes,
 };
 
 Button.defaultProps = {
   theme,
-  iconSide: "right",
 };
 
 export default Button;

@@ -27,8 +27,8 @@ storiesOf("Buttons", module)
   ))
   .add("With a selected Icon", () => (
     <React.Fragment>
-      <Button iconName="add" iconSide="left">Create project</Button>
-      <Button iconName="add" iconSide="right">Create project</Button>
+      <Button icon={ { name: "add" } } iconSide="left">Create project</Button>
+      <Button icon={ { name: "add" } } iconSide="right">Create project</Button>
     </React.Fragment>
   ))
   .add("Set to full width", () => (

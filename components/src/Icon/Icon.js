@@ -39,11 +39,11 @@ Svg.propTypes = {
 Svg.defaultProps = {
   color: "currentColor",
   title: null,
-  size: 24,
+  size: "1em",
 };
 
 const Icon = styled(Svg)`
-  min-width: ${props => `${props.size}px`};
+  min-width: ${props => `${props.size}`};
   ${space}
   ${color}  
 `;
@@ -55,7 +55,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
-  size: 24,
+  size: "1em",
 };
 
 const iconSizeRatio = 1.25;
