@@ -10,10 +10,16 @@ const InlineValidation = ({
   color,
   icon,
   message,
+  fieldId,
   children,
   ...boxProps
 }) => (
-  <Box color={ color } mb={ 2 } { ...boxProps }>
+  <Box 
+    id={`${fieldId}Error`}
+    color={ color } 
+    mb={ 2 } 
+    { ...boxProps }
+  >
     <Flex>
       <Icon { ...icon } />
       <Text mb={ 0 }>{message}</Text>
