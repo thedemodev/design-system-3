@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 07 Feb 2019 13:40:48 GMT
+ * Generated on Thu, 07 Feb 2019 13:58:59 GMT
  */
 
 export const color_base_black = "#011e38";
@@ -28,6 +28,7 @@ export const line_height_small_text_base = "1.71428571";
 export const line_height_small_text_compressed = "1.14285714";
 export const radius_border_small = "2px";
 export const radius_border_medium = "4px";
+export const radius_border_circle = "50%";
 export const shadow_box_small = "0 1px 1px rgba(27,31,35,0.1)";
 export const size_base_none = "0px";
 export const size_base_half = "4px";
