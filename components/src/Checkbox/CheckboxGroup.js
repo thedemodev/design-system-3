@@ -1,48 +1,48 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Radio from "./Radio";
+import Checkbox from "./Checkbox";
 
-const getRadioButtons = props => {
-  const radioButtons = React.Children.map(props.children, radio => {
+const getCheckboxButtons = props => {
+  const checkboxButtons = React.Children.map(props.children, checkbox => {
     const {
       value,
       disabled,
-      ...radioProps
-    } = radio.props;
+      ...checkboxProps
+    } = checkbox.props;
     return (
-      <Radio
-        { ...radioProps }
+      <Checkbox
+        { ...checkboxProps }
         disabled={ props.disabled || disabled }
         name={ props.name }
         value={ value }
-        defaultChecked={ value === props.defaultValue ? true : undefined }
-        checked={ props.checkedValue && (value === props.checkedValue) }
+        defaultChecked={ props.defaultChecked ? props.defaultValue.includes(value) : undefined }
+        checked={ props.checkedValue ? props.checkedValue.includes(value) : undefined }
         onChange={ props.onChange }
       />
     );
   });
-  return (radioButtons);
+  return (checkboxButtons);
 };
 
-const BaseRadioGroup = ({
+const BaseCheckboxGroup = ({
   className,
   ...props
 }) => (
   <div className={ className }>
-    { getRadioButtons(props) }
+    { getCheckboxButtons(props) }
   </div>
 );
 
-BaseRadioGroup.propTypes = {
+BaseCheckboxGroup.propTypes = {
   name: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.shape({
-      type: PropTypes.oneOf([Radio]),
+      type: PropTypes.oneOf([Checkbox]),
     }),
     PropTypes.arrayOf(
       PropTypes.shape({
-        type: PropTypes.oneOf([Radio]),
+        type: PropTypes.oneOf([Checkbox]),
       })
     ),
   ]).isRequired,
@@ -52,14 +52,14 @@ BaseRadioGroup.propTypes = {
   className: PropTypes.string,
 };
 
-BaseRadioGroup.defaultProps = {
+BaseCheckboxGroup.defaultProps = {
   defaultValue: undefined,
   checkedValue: undefined,
   onChange: undefined,
   className: null,
 };
 
-const RadioGroup = styled(BaseRadioGroup)`
+const CheckboxGroup = styled(BaseCheckboxGroup)`
 `;
 
-export default RadioGroup;
+export default CheckboxGroup;
