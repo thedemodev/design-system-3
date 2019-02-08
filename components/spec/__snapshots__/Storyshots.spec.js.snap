@@ -1588,7 +1588,7 @@ exports[`Storyshots Field With Input and InlineValidation 1`] = `
           Default label
         </label>
         <input
-          className="sc-cSHVUG WnqvG"
+          className="sc-cSHVUG clcQyF"
           disabled={false}
         />
         <div
@@ -1661,7 +1661,7 @@ exports[`Storyshots Field With Label for Input 1`] = `
           Default label
         </label>
         <input
-          className="sc-cSHVUG WnqvG"
+          className="sc-cSHVUG clcQyF"
           disabled={false}
           id="thisInput"
         />
@@ -1813,7 +1813,7 @@ exports[`Storyshots Field With all additional components 1`] = `
           </p>
         </label>
         <input
-          className="sc-cSHVUG WnqvG"
+          className="sc-cSHVUG clcQyF"
           disabled={false}
           id="thisInput1"
         />
@@ -2080,7 +2080,7 @@ exports[`Storyshots Form Form 1`] = `
             Name
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -2117,7 +2117,7 @@ exports[`Storyshots Form Form 1`] = `
             </p>
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -2138,7 +2138,7 @@ exports[`Storyshots Form Form 1`] = `
             </p>
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -2191,7 +2191,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Name
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2228,7 +2228,7 @@ exports[`Storyshots Form With form sections 1`] = `
               </p>
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2249,7 +2249,7 @@ exports[`Storyshots Form With form sections 1`] = `
               </p>
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2271,7 +2271,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Gender
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2284,7 +2284,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Ocupation
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2333,7 +2333,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Name
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2370,7 +2370,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               </p>
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2391,7 +2391,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               </p>
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2408,7 +2408,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Gender
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2421,7 +2421,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Ocupation
             </label>
             <input
-              className="sc-cSHVUG WnqvG"
+              className="sc-cSHVUG clcQyF"
               disabled={false}
             />
           </div>
@@ -2465,7 +2465,7 @@ exports[`Storyshots Form Without title 1`] = `
             Name
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -2502,7 +2502,7 @@ exports[`Storyshots Form Without title 1`] = `
             </p>
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -2523,7 +2523,7 @@ exports[`Storyshots Form Without title 1`] = `
             </p>
           </label>
           <input
-            className="sc-cSHVUG WnqvG"
+            className="sc-cSHVUG clcQyF"
             disabled={false}
           />
         </div>
@@ -8291,7 +8291,7 @@ exports[`Storyshots Input Input 1`] = `
       }
     >
       <input
-        className="sc-cSHVUG WnqvG"
+        className="sc-cSHVUG clcQyF"
         disabled={false}
       />
     </div>
@@ -8316,7 +8316,7 @@ exports[`Storyshots Input Set to disabled 1`] = `
       }
     >
       <input
-        className="sc-cSHVUG hjoExm"
+        className="sc-cSHVUG cjvZbl"
         disabled={true}
       />
     </div>
@@ -8341,7 +8341,7 @@ exports[`Storyshots Input Set to error 1`] = `
       }
     >
       <input
-        className="sc-cSHVUG lmdEKq"
+        className="sc-cSHVUG jovnfe"
         disabled={false}
       />
     </div>
