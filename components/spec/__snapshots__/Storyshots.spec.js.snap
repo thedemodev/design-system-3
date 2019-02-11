@@ -384,10 +384,11 @@ exports[`Storyshots Buttons Button 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -479,10 +480,11 @@ exports[`Storyshots Buttons DangerButton 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -574,10 +576,11 @@ exports[`Storyshots Buttons PrimaryButton 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -669,10 +672,11 @@ exports[`Storyshots Buttons QuietButton 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -765,10 +769,11 @@ exports[`Storyshots Buttons Set to disabled 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -861,10 +866,11 @@ exports[`Storyshots Buttons Set to full width 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -956,10 +962,11 @@ exports[`Storyshots Buttons With a selected Icon 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -1051,10 +1058,11 @@ exports[`Storyshots Buttons With a selected Icon 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -1168,10 +1176,11 @@ exports[`Storyshots Buttons With a selected size 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -1243,10 +1252,11 @@ exports[`Storyshots Buttons With a selected size 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -1318,10 +1328,11 @@ exports[`Storyshots Buttons With a selected size 1`] = `
               "subsectionTitle": "1.2",
               "title": "1.04347826",
             },
-            "radii": Array [
-              "2px",
-              "4px",
-            ],
+            "radii": Object {
+              "circle": "50%",
+              "medium": "4px",
+              "small": "2px",
+            },
             "space": Array [
               "0px",
               "4px",
@@ -1604,7 +1615,7 @@ exports[`Storyshots Field With Input 1`] = `
           Default label
         </label>
         <input
-          className="sc-kAzzGY czbVBA"
+          className="sc-kAzzGY jfonHo"
           disabled={false}
         />
       </div>
@@ -1638,7 +1649,7 @@ exports[`Storyshots Field With Input and InlineValidation 1`] = `
           Default label
         </label>
         <input
-          className="sc-kAzzGY czbVBA"
+          className="sc-kAzzGY jfonHo"
           disabled={false}
         />
         <div
@@ -1711,7 +1722,7 @@ exports[`Storyshots Field With Label for Input 1`] = `
           Default label
         </label>
         <input
-          className="sc-kAzzGY czbVBA"
+          className="sc-kAzzGY jfonHo"
           disabled={false}
           id="thisInput"
         />
@@ -1863,7 +1874,7 @@ exports[`Storyshots Field With all additional components 1`] = `
           </p>
         </label>
         <input
-          className="sc-kAzzGY czbVBA"
+          className="sc-kAzzGY jfonHo"
           disabled={false}
           id="thisInput1"
         />
@@ -2212,7 +2223,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Project
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
               placeholder="Project 128703"
             />
@@ -2242,7 +2253,7 @@ exports[`Storyshots Form Demo form 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -2255,7 +2266,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Item code
             </label>
             <input
-              className="sc-kAzzGY cyxhvs"
+              className="sc-kAzzGY jYefyo"
               disabled={false}
               value="WS2SB6"
             />
@@ -2307,7 +2318,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Eaches expected on Job
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
               placeholder="2 000"
             />
@@ -2321,7 +2332,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Eaches remaining on Project
             </label>
             <input
-              className="sc-kAzzGY hNnQgG"
+              className="sc-kAzzGY fPkzUU"
               disabled={true}
               value="18 000"
             />
@@ -2343,7 +2354,7 @@ exports[`Storyshots Form Demo form 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
               placeholder="May 26, 2019"
             />
@@ -2365,7 +2376,7 @@ exports[`Storyshots Form Demo form 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY hNnQgG"
+              className="sc-kAzzGY fPkzUU"
               disabled={true}
               value="June 29, 2019"
             />
@@ -2639,7 +2650,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Item
             </label>
             <input
-              className="sc-kAzzGY cyxhvs"
+              className="sc-kAzzGY jYefyo"
               disabled={false}
               value="235432"
             />
@@ -2708,7 +2719,7 @@ exports[`Storyshots Form Demo form 1`] = `
               Quantity
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -2793,7 +2804,7 @@ exports[`Storyshots Form Form 1`] = `
             Name
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -2830,7 +2841,7 @@ exports[`Storyshots Form Form 1`] = `
             </p>
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -2851,7 +2862,7 @@ exports[`Storyshots Form Form 1`] = `
             </p>
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -2906,7 +2917,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Name
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -2943,7 +2954,7 @@ exports[`Storyshots Form With form sections 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -2964,7 +2975,7 @@ exports[`Storyshots Form With form sections 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -2988,7 +2999,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Gender
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3001,7 +3012,7 @@ exports[`Storyshots Form With form sections 1`] = `
               Ocupation
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3050,7 +3061,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Name
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3087,7 +3098,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3108,7 +3119,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               </p>
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3125,7 +3136,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Gender
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3138,7 +3149,7 @@ exports[`Storyshots Form With form sections without titles 1`] = `
               Ocupation
             </label>
             <input
-              className="sc-kAzzGY czbVBA"
+              className="sc-kAzzGY jfonHo"
               disabled={false}
             />
           </div>
@@ -3182,7 +3193,7 @@ exports[`Storyshots Form Without title 1`] = `
             Name
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -3219,7 +3230,7 @@ exports[`Storyshots Form Without title 1`] = `
             </p>
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -3240,7 +3251,7 @@ exports[`Storyshots Form Without title 1`] = `
             </p>
           </label>
           <input
-            className="sc-kAzzGY czbVBA"
+            className="sc-kAzzGY jfonHo"
             disabled={false}
           />
         </div>
@@ -9014,7 +9025,7 @@ exports[`Storyshots Input Input 1`] = `
       }
     >
       <input
-        className="sc-kAzzGY czbVBA"
+        className="sc-kAzzGY jfonHo"
         disabled={false}
       />
     </div>
@@ -9039,7 +9050,7 @@ exports[`Storyshots Input Set to disabled 1`] = `
       }
     >
       <input
-        className="sc-kAzzGY hNnQgG"
+        className="sc-kAzzGY fPkzUU"
         disabled={true}
       />
     </div>
@@ -9064,7 +9075,7 @@ exports[`Storyshots Input Set to error 1`] = `
       }
     >
       <input
-        className="sc-kAzzGY cyxhvs"
+        className="sc-kAzzGY jYefyo"
         disabled={false}
       />
     </div>
