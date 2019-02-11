@@ -17,7 +17,7 @@ const Wrapper = styled.div`
  }
 `;
 
-const HeaderValidation = ({
+const BaseHeaderValidation = ({
   title,
   message,
   children,
@@ -27,13 +27,15 @@ const HeaderValidation = ({
     <Icon icon="error" size={ theme.space[6] } mr={ theme.space[3] } />
     <Wrapper>
       <SubsectionTitle mb={ theme.space[0] }>{ title }</SubsectionTitle>
-      <Text mb={ theme.space[0] }>{ message }</Text>
+      <Text>{ message }</Text>
       { children }
     </Wrapper>
   </Flex>
 );
 
-HeaderValidation.propTypes = {
+const HeaderValidation = styled(BaseHeaderValidation)``;
+
+BaseHeaderValidation.propTypes = {
   title: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
@@ -42,7 +44,7 @@ HeaderValidation.propTypes = {
   ]),
 };
 
-HeaderValidation.defaultProps = {
+BaseHeaderValidation.defaultProps = {
   children: null,
 };
 
