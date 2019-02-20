@@ -4,3 +4,8 @@
 
 [build.environment]
   YARN_VERSION = "1.13.0"
+
+[context.storybook]
+  command = "yarn workspace @nulogy/components build-storybook"
+  publish = "components/storybook-static"
+
