@@ -15,7 +15,7 @@ describe("NavBar Menu", () => {
 
     expect(cy.contains("Customers")).to.exist;
     cy.focused().then($el => {
-      expect($el).to.equal("Customers");
+      expect($el).to.contain("Customers");
     });
   });
 });
