@@ -12,6 +12,8 @@ export * from "./Icon/Icon";
 export { default as InlineValidation } from "./Validation/InlineValidation";
 export { default as NavBar } from "./NavBar/NavBar";
 export { default as NavBarSearch } from "./NavBarSearch/NavBarSearch";
+export { MenuItem } from "./NavBar/MenuItem";
+export { default as SubMenuItem } from "./NavBar/SubMenuItem";
 export { default as HeaderValidation } from "./Validation/HeaderValidation";
 export { default as Field } from "./Field/Field";
 export { default as HelpText } from "./Field/HelpText";
