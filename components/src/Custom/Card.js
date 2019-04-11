@@ -20,7 +20,7 @@ const UnstyledCard = ({
   ...props
 }) => (
   <Box { ...props }>
-    <SubsectionTitle mr="x3">{ title }</SubsectionTitle>
+    <SubsectionTitle mr="x4">{ title }</SubsectionTitle>
     <IconicButton icon="menu" />
     <Flex justifyContent="space-between">
       <Box mr="x3">
@@ -28,8 +28,8 @@ const UnstyledCard = ({
         <Text>Quantity: { quantity }</Text>
       </Box>
       <Box>
-        <Text>Due: { dueTime }</Text>
-        <Text>{ dueDate }</Text>
+        <Text textAlign="right">Due: { dueTime }</Text>
+        <Text textAlign="right">{ dueDate }</Text>
       </Box>
       </Flex>
   </Box>
@@ -38,17 +38,21 @@ const UnstyledCard = ({
 const Card = styled(UnstyledCard)(
   space,
   {
-    backgroundColor: theme.colors.lightBlue,
+    backgroundColor: theme.colors.whiteGrey,
     borderRadius: theme.radii.medium,
     padding: theme.space.x2,
     boxShadow: theme.boxShadows.small,
     position: "relative",
-    "button": {
+    "&:hover": {
+      backgroundColor: theme.colors.lightBlue,
+      cursor: "grab",
+    },
+    [`${IconicButton}`]: {
       position: "absolute",
       right: theme.space.none,
       top: theme.space.x1,
     },
-  }
+  },
 );
 
 Card.propTypes = {

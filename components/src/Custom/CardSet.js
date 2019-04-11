@@ -20,13 +20,10 @@ const UnstyledCardSet = ({
 const CardSet = styled(UnstyledCardSet)(
   space,
   {
-      border: "solid 1px gold",
         [`${Card}`]: {
             marginBottom: theme.space.x1,
-            border: "solid 1px red",
             "&:last-child": {
                 marginBottom: theme.space.none,
-                border: "solid 1px green",
             },
         },
   },
