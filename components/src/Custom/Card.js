@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
 import PropTypes from "prop-types";
+import { transparentize } from "polished";
 import {
   SubsectionTitle,
   Text,
@@ -46,6 +47,11 @@ const Card = styled(UnstyledCard)(
     "&:hover": {
       backgroundColor: theme.colors.lightBlue,
       cursor: "grab",
+    },
+    "&:active": {
+      backgroundColor: theme.colors.whiteGrey,
+      opacity: .6667,
+      cursor: "grabbing",
     },
     [`${IconicButton}`]: {
       position: "absolute",
