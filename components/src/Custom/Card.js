@@ -32,7 +32,7 @@ const UnstyledCard = ({
         <Text textAlign="right">Due: { dueTime }</Text>
         <Text textAlign="right">{ dueDate }</Text>
       </Box>
-      </Flex>
+    </Flex>
   </Box>
 );
 
@@ -50,7 +50,7 @@ const Card = styled(UnstyledCard)(
     },
     "&:active": {
       backgroundColor: theme.colors.whiteGrey,
-      opacity: .6667,
+      opacity: 0.6667,
       cursor: "grabbing",
     },
     [`${IconicButton}`]: {
