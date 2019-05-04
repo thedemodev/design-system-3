@@ -1,26 +1,26 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { Box } from "../Box";
-import { Flex } from "../Flex";
-import { Text, SubsectionTitle } from "../Type";
-import { IconicButton } from "../Button";
-import { Card, CardSet, CPCard } from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Box } from '../Box';
+import { Flex } from '../Flex';
+import { Text, SubsectionTitle } from '../Type';
+import { IconicButton } from '../Button';
+import { Card, CardSet, CPCard } from '.';
 
-storiesOf("Card", module)
-  .add("Card", () => <Card>I am a card.</Card>)
-  .add("Custom card", () => (
+storiesOf('Card', module)
+  .add('Card', () => <Card>I am  a card.</Card>)
+  .add('Custom card', () => (
     <Card bg="black" color="white" borderRadius="small" p="x1">
       I am a custom card.
     </Card>
   ))
-  .add("Cardset", () => (
+  .add('Cardset', () => (
     <CardSet>
       <Card>I am a 1st card in a cardset.</Card>
       <Card>I am a 2nd card in a cardset.</Card>
       <Card>I am a 3rd card in a cardset.</Card>
     </CardSet>
   ))
-  .add("Capacity Planing Cardset", () => (
+  .add('Capacity Planing Cardset', () => (
     <CardSet>
       <CPCard>
         <SubsectionTitle mr="x4">Title</SubsectionTitle>
