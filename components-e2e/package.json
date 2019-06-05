@@ -7,7 +7,11 @@
   "private": true,
   "scripts": {
     "start": "cypress open",
-    "test": "yarn lint && yarn cypress run --spec '**/components/**/*spec.js'",
+    "test": "yarn lint && yarn workspace @nulogy/components build-storybook && yarn cypress run --spec '**/components/**/*spec.js'",
+    "test:with-static-storybook-full": "yarn workspace @nulogy/components build-storybook && yarn http-server -p 8080 ../components/storybook-static & HTTPSERVER_PID=$! && yarn wait-on http://localhost:8080 && yarn cypress run --spec '**/components/**/*spec.js'; kill $!",
+    "test:with-static-storybook": "yarn workspace @nulogy/components build-storybook && yarn start-static-storybook-server && yarn cypress run --spec '**/components/**/*spec.js' && kill %-",
+    "start-static-storybook-server": "http-server -p 8080 ../components/storybook-static & HTTPSERVER_PID=$! && yarn wait-on http://localhost:8080",
+    "start-stop-static-storybook-server": "http-server -p 8080 ../components/storybook-static & HTTPSERVER_PID=$! && yarn wait-on http://localhost:8080 && kill %-",
     "lint": "yarn run eslint",
     "eslint": "eslint --config .eslintrc './**/*.js'",
     "eslint:fix": "yarn run eslint --fix"
@@ -21,8 +25,10 @@
     "eslint": "5.16.0",
     "eslint-plugin-chai-friendly": "0.4.1",
     "eslint-plugin-cypress": "2.2.1",
+    "http-server": "0.11.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "wait-on": "3.2.0",
     "webpack": ">=2"
   },
   "dependencies": {
