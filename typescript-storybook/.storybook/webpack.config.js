@@ -3,7 +3,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.story\.js?$/,
+        test: /\.(ts|tsx)$/,
+        loaders: [require.resolve('awesome-typescript-loader')]
+      },
+      {
+        test: /\.story\.tsx?$/,
         loaders: [require.resolve('@storybook/addon-storysource/loader')],
         enforce: 'pre',
       },

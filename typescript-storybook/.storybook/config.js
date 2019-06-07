@@ -1,9 +1,8 @@
 import React from "react";
 import { configure, addDecorator } from "@storybook/react";
-import NDSProvider from "../src/NDSProvider/NDSProvider";
-import theme from "../src/theme";
+import { default as theme, NDSProvider } from "@nulogy/components";
 
-const req = require.context("../src", true, /\.story\.js$/);
+const req = require.context("../src", true, /\.story\.tsx$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
