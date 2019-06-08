@@ -87,4 +87,4 @@ yarn-error.log*
 **/cypress/videos
 
 # Typescript
-built/*
+**/built/*

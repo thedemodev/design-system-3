@@ -1,21 +1,26 @@
-import React from "react";
-import {
-  ColorProps,
-  SpaceProps,
-  WidthProps,
-  MaxWidthProps,
-  BorderRadiusProps,
-  BoxShadowProps,
-  TextAlignProps,
-  OrderProps,
-  HeightProps,
-  MinHeightProps,
-  MaxHeightProps,
-  PositionProps,
-  DisplayProps
-} from "styled-system";
-
 declare module "@nulogy/components" {
+  import * as React from "react";
+  import {
+    ColorProps,
+    SpaceProps,
+    WidthProps,
+    MaxWidthProps,
+    BorderRadiusProps,
+    BoxShadowProps,
+    TextAlignProps,
+    OrderProps,
+    HeightProps,
+    MinHeightProps,
+    MaxHeightProps,
+    PositionProps,
+    DisplayProps
+  } from "styled-system";
+
+  // Mimics how children can be passed to styled components
+  interface StyledChildrenProps {
+    children?: React.ReactNode;
+  }
+
   interface BoxProps
     extends ColorProps,
       SpaceProps,
@@ -29,7 +34,8 @@ declare module "@nulogy/components" {
       MinHeightProps,
       MaxHeightProps,
       PositionProps,
-      DisplayProps {}
+      DisplayProps,
+      StyledChildrenProps {}
 
-  export function Box(props: BoxProps): React.FunctionComponent<BoxProps>;
+  export class Box extends React.Component<BoxProps> {}
 }

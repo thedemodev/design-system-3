@@ -46,6 +46,9 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
+  "resolutions": {
+    "@types/react": "16.8.6"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "yarn run precommit"
