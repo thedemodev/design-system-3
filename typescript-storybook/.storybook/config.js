@@ -1,6 +1,6 @@
 import React from "react";
 import { configure, addDecorator } from "@storybook/react";
-import { default as theme, NDSProvider } from "@nulogy/components";
+import { theme, NDSProvider } from "@nulogy/components";
 
 const req = require.context("../src", true, /\.story\.tsx$/);
 
