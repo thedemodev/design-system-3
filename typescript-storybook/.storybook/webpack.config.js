@@ -1,24 +1,13 @@
-const path = require("path");
-module.exports = {
-  module: {
-    rules: [
+module.exports = ({ config }) => {
+  config.module.rules.push({
+    test: /\.(ts|tsx)$/,
+    use: [
       {
-        test: /\.(ts|tsx)$/,
-        loaders: [require.resolve('awesome-typescript-loader')]
+        loader: require.resolve('awesome-typescript-loader'),
       },
-      {
-        test: /\.story\.tsx?$/,
-        loaders: [require.resolve('@storybook/addon-storysource/loader')],
-        enforce: 'pre',
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader'
-      },
-      {
-        test: /\.css$/,
-        loaders: ["style-loader", "css-loader"]
-      }
     ],
-  },
+  });
+  config.resolve.extensions.push('.ts', '.tsx');
+  config.devtool = "inline-source-map";
+  return config;
 };
