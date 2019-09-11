@@ -63,9 +63,16 @@ const StyledTable = styled(RVTable)({
   }
 });
 
+const customCellRenderer = props => (
+  <div>
+    <b>A+</b>
+  </div>
+);
+
 const generateColumns = numColumns => {
   const columns = [];
 
+  columns.push(<RVColumn key={-1} label="Custom" dataKey="custom" width={100} cellRenderer={customCellRenderer} />);
   for (let i = 0; i < numColumns; i++) {
     columns.push(<RVColumn key={i} label={`C${i}`} dataKey={`c${i}`} width={100} />);
   }
