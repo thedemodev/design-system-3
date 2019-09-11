@@ -2,20 +2,24 @@ import React from "react";
 import { Table as RVTable, Column as RVColumn } from "react-virtualized";
 import styled from "styled-components";
 
-const list = [
-  {
-    c1: "r1-cell1",
-    c2: "r1-cell2",
-    c3: "r1-cell3",
-    c4: "r1-cell4"
-  },
-  {
-    c1: "r2-cell1",
-    c2: "r2-cell2",
-    c3: "r2-cell3",
-    c4: "r2-cell4"
+const generateList = (numRows, numColumns) => {
+  const rows = [];
+
+  for (let i = 0; i < numRows; i++) {
+    const row = {};
+    for (let j = 0; j < numColumns; j++) {
+      row[`c${j}`] = `r${i}c${j}`;
+    }
+    rows.push(row);
   }
-];
+
+  return rows;
+};
+
+const NUM_ROWS = 10000;
+const NUM_COLS = 50;
+
+const list = generateList(NUM_ROWS, NUM_COLS);
 
 const StyledTable = styled(RVTable)({
   ".ReactVirtualized__Table": {},
@@ -41,13 +45,13 @@ const StyledTable = styled(RVTable)({
   },
   ".ReactVirtualized__Table__headerColumn": {
     marginRight: "10px",
-    minWidth: "0px",
+    minWidth: "50px",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap"
   },
   ".ReactVirtualized__Table__rowColumn": {
     marginRight: "10px",
-    minWidth: "0px",
+    minWidth: "50px",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap"
   },
@@ -59,19 +63,26 @@ const StyledTable = styled(RVTable)({
   }
 });
 
+const generateColumns = numColumns => {
+  const columns = [];
+
+  for (let i = 0; i < numColumns; i++) {
+    columns.push(<RVColumn key={i} label={`C${i}`} dataKey={`c${i}`} width={100} />);
+  }
+
+  return columns;
+};
+
 const Table = () => (
   <StyledTable
-    width={300}
-    height={300}
+    width={500}
+    height={500}
     headerHeight={20}
     rowHeight={30}
     rowCount={list.length}
     rowGetter={({ index }) => list[index]}
   >
-    <RVColumn label="C1" dataKey="c1" width={100} />
-    <RVColumn label="C2" dataKey="c2" width={200} />
-    <RVColumn label="C3" dataKey="c3" width={300} />
-    <RVColumn label="C4" dataKey="c4" width={200} />
+    {generateColumns(NUM_COLS)}
   </StyledTable>
 );
 
