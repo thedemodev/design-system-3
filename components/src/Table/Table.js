@@ -1,21 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { AgGridReact } from "ag-grid-react";
-import style from "./styles.scss";
-import { DropdownMenu, DropdownButton, DropdownItem } from "../DropdownMenu";
+import "./styles.scss";
+import { DropdownMenu, DropdownButton } from "../DropdownMenu";
 
-class NameCellRenderer extends React.Component {
-  render() {
-    return (
-      <div style={{ position: "relative", top: "5px", textAlign: "right" }}>
-        <DropdownMenu>
-          <DropdownButton onClick={() => {}}>Edit</DropdownButton>
-          <DropdownButton onClick={() => {}}>Delete</DropdownButton>
-        </DropdownMenu>
-      </div>
-    );
-  }
-}
+const NameCellRenderer = () => (
+  <div style={{ position: "relative", top: "5px", textAlign: "right" }}>
+    <DropdownMenu>
+      <DropdownButton onClick={() => {}}>Edit</DropdownButton>
+      <DropdownButton onClick={() => {}}>Delete</DropdownButton>
+    </DropdownMenu>
+  </div>
+);
 
 class Table extends React.Component {
   constructor(props) {
@@ -23,10 +18,15 @@ class Table extends React.Component {
     this.state = {
       columnDefs: [
         {
-          headerName: "Make",
-          field: "make",
+          headerName: "ID",
+          field: "id",
           checkboxSelection: true,
           headerCheckboxSelection: true,
+          pinned: true
+        },
+        {
+          headerName: "Make",
+          field: "make",
           resizable: true,
           sortable: true
         },
@@ -48,16 +48,19 @@ class Table extends React.Component {
       ],
       rowData: [
         {
+          id: 1,
           make: "Toyota very long cell that will have to wrap and do things for sure",
           model: "Celica",
           price: 35000
         },
         {
+          id: 2,
           make: "Ford",
           model: "Mondeo",
           price: 32000
         },
         {
+          id: 3,
           make: "Porsche",
           model: "Boxter",
           price: 10000
