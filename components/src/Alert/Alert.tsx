@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
 import { Box } from "../Box";
@@ -8,7 +7,6 @@ import { Link } from "../Link";
 import { Flex } from "../Flex";
 import { Text } from "../Type";
 import theme from "../theme";
-
 const alertColours = {
   danger: {
     borderColor: theme.colors.red,
@@ -27,29 +25,32 @@ const alertColours = {
     backgroundColor: theme.colors.lightYellow
   }
 };
-
 const alertStyles = {
   [`${Link}`]: {
     color: theme.colors.black
   }
 };
-
-class BaseAlert extends React.Component {
+type BaseAlertProps = {
+  className?: string;
+  isCloseable?: React.ReactNode;
+  title?: string;
+  type?: "danger" | "informative" | "success" | "warning";
+};
+type BaseAlertState = {
+  isVisible: boolean;
+};
+class BaseAlert extends Component<BaseAlertProps, BaseAlertState> {
   constructor() {
     super();
-
     this.state = { isVisible: true };
     this.hideAlert = this.hideAlert.bind(this);
   }
-
   hideAlert() {
     this.setState({ isVisible: false });
   }
-
   render() {
     const { children, isCloseable, title, type, className, ...props } = this.props;
     const { isVisible } = this.state;
-
     return isVisible ? (
       <Flex
         bg={alertColours[type].backgroundColor}
@@ -77,7 +78,6 @@ class BaseAlert extends React.Component {
     ) : null;
   }
 }
-
 BaseAlert.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
@@ -94,5 +94,4 @@ BaseAlert.defaultProps = {
 };
 
 const Alert = styled(BaseAlert)(space, alertStyles);
-
 export default Alert;
