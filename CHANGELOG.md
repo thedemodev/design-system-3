@@ -1,3 +1,14 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.17.0](https://github.com/nulogy/design-system/compare/v0.16.4...v0.17.0) (2019-12-02)
+
+### Features
+
+- use conventional commits setting from lerna ([a93c495](https://github.com/nulogy/design-system/commit/a93c495))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -6,12 +17,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
- 
+
 ### Added
+
 ### Changed
+
 ### Deprecated
+
 ### Removed
+
 ### Fixed
+
 ### Security
 
 ## [0.16.4] - 2019-11-29
