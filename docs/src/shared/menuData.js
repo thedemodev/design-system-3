@@ -112,10 +112,6 @@ export const menuData = [
         href: "/components/modal"
       },
       {
-        name: "Month Picker",
-        href: "/components/month-picker"
-      },
-      {
         name: "NavBar",
         href: "/components/navbar"
       },
